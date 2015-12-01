@@ -13,13 +13,13 @@
  	<script type="text/javascript" src="static/app.js"></script>
 	<script type="text/javascript" src="static/router.js"></script>
  	<style>
-		  body {
-		    display: flex;
-		    min-height: 100vh;
-		    flex-direction: column;
-		    background-color: #dad5be;
-		    color:#633426;
-		  }
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+			background-color: #dad5be;
+			color:#633426;
+		}
 		 .input-field label {
 		 	color: #633426;
 		 }
@@ -30,12 +30,22 @@
 		     border-bottom: 1px solid #6E9474;
 		     box-shadow: 0 1px 0 0 #bababa;
 		}
-		  nav, footer{
-		  	background-color: #6E9474 !important;
-		  }
-		  table{
-		  	border-color:#633426 !important;
-		  }
+		nav, footer{
+			background-color: #6E9474 !important;
+		}
+		table{
+			border-color:#633426 !important;
+		}
+		.ng-invalid.ng-dirty {
+			border-color: #FA787E;
+		}
+		.ng-valid.ng-dirty {
+			border-color: #78FA89;
+		}
+		html {
+			font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  		}
+      
  	</style>
  	<script>
  	$(document).ready(function() {
@@ -71,46 +81,9 @@
 	   </ul>
 	</div>
 	</nav>
-	<!--div id="dashboard" ng-show="tab.isSelect(1)">
-		<h1>Dashboard</h1>
-	</div>
-	<div id="ventas" ng-show="tab.isSelect(2)">
-		<h1>Ventas</h1>
-	</div>
-	<div id="compra" ng-show="tab.isSelect(3)">
-		<h1>Compras</h1>
-	</div>
-	<div id="inventario" ng-show="tab.isSelect(4)">
-		<h1>Inventario</h1>
-	</div>
-	<div id="recetas" ng-show="tab.isSelect(5)">
-		<h1>Recetas</h1>
-	</div-->
 	<div id="content" ng-view>
 		
 	</div>
 </section>
-	  <!--footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2015 Copyright 
-            <a class="grey-text text-lighten-4 right" href="#!">by Exile</a>
-            </div>
-          </div>
-        </footer-->         
 </body>
 </html
